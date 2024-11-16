@@ -1,0 +1,124 @@
+/* 90s-inspired Modern Minimal Design */
+:root {
+    --grid-color: rgba(0, 0, 255, 0.1);
+}
+
+body {
+    scroll-behavior: smooth;
+    background-image: linear-gradient(var(--grid-color) 1px, transparent 1px),
+                      linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+/* Retro Elements */
+.hero-gradient {
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Custom Scrollbar - Light Mode */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-gray-100 dark:bg-gray-800;
+    border: 1px solid theme('colors.gray.200');
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-gray-400 dark:bg-gray-600;
+    border: 2px solid theme('colors.gray.100');
+}
+
+/* Project Carousel Styling */
+.swiper-container {
+    padding: 2rem;
+}
+
+.swiper-slide {
+    @apply bg-white dark:bg-gray-800;
+    border: 1px solid theme('colors.gray.200');
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 4px 4px 0 rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.swiper-slide:hover {
+    transform: translateY(-5px);
+}
+
+/* FAQ Accordion */
+.faq-item {
+    @apply border-2 border-gray-200 dark:border-gray-700;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.faq-question {
+    @apply cursor-pointer p-4 bg-white dark:bg-gray-800;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-answer {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-answer.active {
+    @apply p-4 bg-gray-50 dark:bg-gray-700;
+    height: auto;
+    opacity: 1;
+}
+
+/* Mobile Menu Animation */
+@keyframes slideDown {
+    from { transform: translateY(-100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.slide-down-enter-active {
+    animation: slideDown 0.3s ease-out;
+}
+
+.slide-down-leave-active {
+    animation: slideDown 0.3s ease-out reverse;
+}
+
+/* Retro Button Styles */
+.retro-button {
+    @apply bg-blue-600 text-white px-8 py-3 rounded-lg transition-all;
+    box-shadow: 4px 4px 0 theme('colors.blue.800');
+}
+
+.retro-button:hover {
+    @apply bg-blue-700;
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 theme('colors.blue.800');
+}
+
+/* Pixel Borders */
+.pixel-border {
+    box-shadow: 
+        2px 0 0 0 theme('colors.gray.200'),
+        -2px 0 0 0 theme('colors.gray.200'),
+        0 2px 0 0 theme('colors.gray.200'),
+        0 -2px 0 0 theme('colors.gray.200');
+}
+
+/* Dark mode overrides */
+.dark .pixel-border {
+    box-shadow: 
+        2px 0 0 0 theme('colors.gray.700'),
+        -2px 0 0 0 theme('colors.gray.700'),
+        0 2px 0 0 theme('colors.gray.700'),
+        0 -2px 0 0 theme('colors.gray.700');
+}
