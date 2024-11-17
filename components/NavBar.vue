@@ -3,7 +3,7 @@
     <div class="container mx-auto px-4">
       <div class="flex justify-between items-center h-16">
         <NuxtLink to="/" class="text-xl font-bold tracking-wider hero-gradient">
-          AngusG<span>.exe</span>
+          AngusG
         </NuxtLink>
         
         <!-- Mobile menu button -->
