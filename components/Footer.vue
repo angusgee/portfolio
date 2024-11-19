@@ -7,28 +7,18 @@
           <h3 class="text-lg font-bold mb-4">Navigation</h3>
           <div class="flex flex-col md:flex-row gap-4 md:gap-8">
             <NuxtLink 
-              to="/" 
-              class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              v-for="(item, index) in navItems" 
+              :key="item.path"
+              :to="item.path"
+              :class="[
+                'transition-colors',
+                index % 4 === 0 ? 'hover:text-blue-500' :
+                index % 4 === 1 ? 'hover:text-gray-600' :
+                index % 4 === 2 ? 'hover:text-green-500' :
+                'hover:text-red-500'
+              ]"
             >
-              Home
-            </NuxtLink>
-            <NuxtLink 
-              to="#projects" 
-              class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-            >
-              Projects
-            </NuxtLink>
-            <NuxtLink 
-              to="#faq" 
-              class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-            >
-              FAQ
-            </NuxtLink>
-            <NuxtLink 
-              to="#contact" 
-              class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-            >
-              Contact
+              {{ item.name }}
             </NuxtLink>
           </div>
         </div>
@@ -100,3 +90,11 @@
   </footer>
 </template>
 
+<script setup lang="ts">
+const navItems = [
+  { name: 'Home', path: '/' },
+  { name: 'Projects', path: '#projects' },
+  { name: 'FAQ', path: '#faq' },
+  { name: 'Contact', path: '#contact' }
+]
+</script>
