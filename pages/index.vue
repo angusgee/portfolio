@@ -1,23 +1,25 @@
 <template>
   <div class="min-h-screen">
     <!-- Hero Section -->
-    <section class="pt-24 pb-24 px-4">
-      <div class="container mx-auto max-w-4xl text-center">
+    <section class="pt-36 pb-36">
+      <div class="container mx-auto max-w-4xl text-center flex flex-col items-center gap-8">
       
-        <h1 class="text-4xl md:text-6xl font-bold mb-10 hero-gradient py-4 leading-relaxed">
+        <h1 class="text-4xl md:text-6xl font-bold hero-gradient py-4 leading-relaxed">
           Welcome to<br>AngusG Automation
         </h1>
-        <p class="text-xl text-gray-600 dark:text-gray-400 mb-8">
-          Crafting AI-Powered Websites and Smart Automation Solutions
+        <p class="text-xl text-gray-600 dark:text-gray-400">
+          AI-Powered Websites and Automation Solutions
         </p>
-        <NuxtLink 
+        <NuxtLink
           to="#contact"
-          class="retro-button"
+          class="retro-button block mt-20"
         >
           Get Started
         </NuxtLink>
       </div>
     </section>
+
+    <hr class="gradient-divider">
 
     <!-- Projects Section -->
     <section id="projects" class="py-16 bg-white dark:bg-gray-800">
@@ -27,6 +29,8 @@
       </div>
     </section>
 
+    <hr class="gradient-divider">
+
     <!-- FAQ Section -->
     <section id="faq" class="py-16">
       <div class="container mx-auto px-4 max-w-2xl">
@@ -34,6 +38,8 @@
         <FaqAccordion />
       </div>
     </section>
+
+    <hr class="gradient-divider">
 
     <!-- Contact Section -->
     <section id="contact" class="py-16 bg-white dark:bg-gray-800">
