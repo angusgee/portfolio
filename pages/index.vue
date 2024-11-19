@@ -50,6 +50,11 @@
     </section>
 
     <hr class="gradient-divider">
+
+    <!-- Pricing Section -->
+    <Pricing />
+
+    <hr class="gradient-divider">
     
     <Footer />
   </div>
