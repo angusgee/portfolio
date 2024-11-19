@@ -39,7 +39,7 @@
           <div class="flex flex-col md:flex-row gap-4 md:gap-8">
             <!-- Twitter -->
             <a 
-              href="https://twitter.com/AngusGAutomation" 
+              href="https://twitter.com/" 
               target="_blank" 
               rel="noopener noreferrer"
               class="flex items-center gap-2 hover:text-blue-500 transition-colors text-sm"
@@ -52,7 +52,7 @@
 
             <!-- GitHub -->
             <a 
-              href="https://github.com/AngusGAutomation" 
+              href="https://github.com/angusgee" 
               target="_blank" 
               rel="noopener noreferrer"
               class="flex items-center gap-2 hover:text-gray-600 transition-colors text-sm"
@@ -65,7 +65,7 @@
 
             <!-- Boot.dev -->
             <a 
-              href="https://boot.dev/u/AngusGAutomation" 
+              href="https://boot.dev/u/angusgee" 
               target="_blank" 
               rel="noopener noreferrer"
               class="flex items-center gap-2 hover:text-green-500 transition-colors text-sm"
