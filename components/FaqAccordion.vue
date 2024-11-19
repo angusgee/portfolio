@@ -53,11 +53,11 @@ const faqs: FAQ[] = [
   },
   {
     question: 'How long does a typical project take?',
-    answer: 'Project timelines vary based on complexity, but most projects are completed within 2-4 weeks.'
+    answer: 'Project timelines vary based on complexity, but most projects are setup within 2-4 weeks.'
   },
   {
     question: 'Do you offer ongoing support?',
-    answer: 'Yes, we provide continuous support and maintenance for all our solutions.'
+    answer: 'Yes, we provide continuous support and maintenance for all our websites and automation solutions.'
   },
   {
     question: 'What makes your automation solutions different?',

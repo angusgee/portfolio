@@ -48,10 +48,19 @@
         <ContactForm />
       </div>
     </section>
+
+    <hr class="gradient-divider">
+    
+    <Footer />
   </div>
 </template>
 
 <script setup lang="ts">
+import ProjectCarousel from '~/components/ProjectCarousel.vue'
+import FaqAccordion from '~/components/FaqAccordion.vue'
+import ContactForm from '~/components/ContactForm.vue'
+import Footer from '~/components/Footer.vue'
+
 definePageMeta({
   layout: 'default'
 })
